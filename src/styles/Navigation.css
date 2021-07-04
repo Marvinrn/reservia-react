@@ -1,0 +1,21 @@
+.banner
+{
+	display: flex;
+    justify-content: flex-end;
+}
+
+.banner a
+{
+    font-size: 0.9em;
+	color: gray;
+	text-decoration: none;
+	line-height: 30px;	
+    margin: 20px;
+}
+
+.banner .nav-active
+{
+	color: #0065FC;
+	border-top: #0065FC solid 4px;
+}
+

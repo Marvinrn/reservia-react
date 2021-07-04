@@ -1,0 +1,18 @@
+*
+{
+	box-sizing: border-box;
+}
+
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	max-width: 1600px;
+}
+
+.blocPage
+{
+	width: calc(100% - 50px);
+	margin: auto;
+}
