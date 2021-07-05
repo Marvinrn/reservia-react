@@ -1,0 +1,38 @@
+p
+{
+    font-size: 0.7em;
+}
+
+form
+{
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.localisation
+{
+	background-color: #F2F2F2;
+	border: 1px solid rgba(243, 243, 243, 0.938);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 13px;
+}
+
+input
+{
+	border: 1px solid #F2F2F2;
+	border-right: none;
+	padding: 13px 0;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+
+.searchBtn
+{
+	background-color: #0065FC;
+	border: 1px solid rgb(87, 87, 255);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: white;
+	padding: 13px 15px;
+}
