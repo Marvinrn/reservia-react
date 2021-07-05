@@ -25,6 +25,7 @@ input
 	padding: 13px 0;
 	margin-left: -4px;
 	margin-right: -4px;
+	width: 150px;
 }
 
 .searchBtn
@@ -35,4 +36,25 @@ input
 	border-bottom-right-radius: 15px;
 	color: white;
 	padding: 13px 15px;
+}
+
+.infobulle
+{
+	display: flex;
+	
+}
+
+.infobulle .infobulletexte
+{
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.infobulle i
+{	
+	color: #0065FC;
+	border: 1px solid rgb(217, 217, 217);
+	border-radius: 50%;
+	padding: 6px 8px 6px 8px;
 }

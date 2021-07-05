@@ -1,0 +1,38 @@
+.filters
+{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.filters li{
+    margin-right: 20px;
+	text-decoration: none;
+	color: black;
+	border: 2px solid rgb(217, 217, 217);
+	border-radius: 25px;
+	padding: 0px 20px 0px 0px;
+	border-left: none;
+}
+
+.filters i
+{
+	margin-right: 10px;
+	padding: 13px;
+	border: 1px solid #deebfff6;
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border-radius: 50%;
+}
+
+.filters li:hover
+{
+	background-color: #DEEBFF;
+}
+
+.filters li:hover i
+{
+	background-color: #0065FC;
+	color: #DEEBFF;
+}

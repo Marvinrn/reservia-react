@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/Hébergements" exact component={Hebergement} />
           <Route path="/activités" exact component={Activites} />
           <Route path="/inscription" exact component={Inscription} />
+          <Route path="/reservia-react" exact component={Home} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

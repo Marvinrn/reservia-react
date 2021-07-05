@@ -13,6 +13,12 @@
     margin: 20px;
 }
 
+.banner a:hover
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
 .banner .nav-active
 {
 	color: #0065FC;
