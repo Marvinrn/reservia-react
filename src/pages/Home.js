@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 import '../styles/Home.css'
 import Filters from '../components/Filters';
+import HostingAside from '../components/HostingAside';
 
 
 function Home() {
@@ -38,6 +39,7 @@ function Home() {
                     <p className="infobulletexte">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
+            <HostingAside />
         </div>
     );
 };
