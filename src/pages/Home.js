@@ -5,6 +5,7 @@ import Logo from '../components/Logo';
 import '../styles/Home.css'
 import Filters from '../components/Filters';
 import HostingAside from '../components/HostingAside';
+import Footer from '../components/Footer';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
 
     return (
         <div>
+            <div  className="blocPage">
             <Logo />
             <Navigation />
             <section>
@@ -40,6 +42,8 @@ function Home() {
                 </div>
             </section>
             <HostingAside />
+            </div>
+            <Footer />
         </div>
     );
 };

@@ -9,7 +9,6 @@ import Inscription from './pages/Inscription';
 
 const App = () => {
   return (
-    <main className="blocPage">
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -20,7 +19,6 @@ const App = () => {
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
-    </main>
   );
 };
 

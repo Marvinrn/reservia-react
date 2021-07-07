@@ -7,10 +7,10 @@ import HomeAsideItem from './HomeAsideItem';
 
 function HostingAside() {
     return (
-        <div className="sectionHebergementAside">
-            <section className="sectionHebergement" >
+        <main className="sectionHostingAside">
+            <section className="sectionHosting" >
                 <h2>Hébergement à Marseille</h2>
-                <div className="imgHebergement" >
+                <div className="imgHosting" >
                     {homeHostingList.map(({ id, cover, name, price }) => (
                         <div key={id}>
                             <HomeHostingItem
@@ -25,8 +25,8 @@ function HostingAside() {
             </section>
 
 
-            <aside className="populaire">
-                <div className="titlePopulaire">
+            <aside className="popular">
+                <div className="titlePopular">
                     <h2>Les plus populaires</h2>
                     <i className="fas fa-chart-line"></i>
                 </div>
@@ -42,7 +42,7 @@ function HostingAside() {
                     ))}
                 </div>
             </aside>
-        </div>
+        </main>
     )
 }
 

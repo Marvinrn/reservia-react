@@ -1,9 +1,9 @@
-.sectionHebergementAside
+.sectionHostingAside
 {
 	display: flex;
 }
 
-.sectionHebergement
+.sectionHosting
 {
     background-color: #F2F2F2;
 	border-radius: 25px;
@@ -12,14 +12,14 @@
 	width: 75%;
 }
 
-.sectionHebergement h2
+.sectionHosting h2
 {
 	padding-left: 45px;
 	font-size: 1em;
 	margin-top: 0;
 }
 
-.imgHebergement
+.imgHosting
 {
     display: flex;
 	flex-flow: row wrap;
@@ -28,7 +28,7 @@
 	margin: auto;
 }
 
-.sectionHebergement h4
+.sectionHosting h4
 {
     margin: 0;
 	padding-left: 30px;

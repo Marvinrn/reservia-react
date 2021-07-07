@@ -1,4 +1,4 @@
-.populaire
+.popular
 {
 	background-color: #F2F2F2;
 	border-radius: 25px;
@@ -6,26 +6,26 @@
 	width: 320px;
 }
 
-.populaire .titlePopulaire
+.popular .titlePopular
 {
 	display: flex;
 	justify-content: space-between;
 }
 
-.populaire .titlePopulaire h2
+.popular .titlePopular h2
 {
 	margin-top: 0;
 	padding-left: 30px;
 	font-size: 1em;
 }
 
-.populaire .titlePopulaire i
+.popular .titlePopular i
 {
 	font-size: 1em;
 	padding-right: 30px;
 }
 
-.populaire figure 
+.popular figure 
 {
 	background-color: white;
 	border-radius: 15px;
@@ -35,7 +35,7 @@
 	display: flex;
 }
 
-.populaire figure img
+.popular figure img
 {
     width: 100px;
 	height: 110px;
