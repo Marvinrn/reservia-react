@@ -13,10 +13,11 @@ body
 
 .blocPage
 {
-	width: calc(100% - 300px);
+	width: calc(100% - 50px);
 	margin: auto;
 }
 
 h1{
 	font-size: 1em;
 }
+

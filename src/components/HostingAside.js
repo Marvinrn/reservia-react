@@ -30,7 +30,7 @@ function HostingAside() {
                     <h2>Les plus populaires</h2>
                     <i className="fas fa-chart-line"></i>
                 </div>
-                <div>
+                <div className="flexFigure">
                 {asideList.map(({ id, cover, name, price }) => (
                         <div key={id}>
                             <HomeAsideItem

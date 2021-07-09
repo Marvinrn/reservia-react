@@ -33,3 +33,26 @@
 	height: 130px;
 	object-fit: cover;
 }
+
+
+@media only screen and (max-width : 1025px) and (min-width : 767px)
+{
+    .blocActivities
+    {
+        flex-wrap: wrap;
+
+    }
+
+    .sectionActivities figure
+	{
+		margin-left: 0;
+		margin-right: 35px;
+		
+	}
+
+    .titleActivities
+    {
+        text-align: center;
+    }
+
+}

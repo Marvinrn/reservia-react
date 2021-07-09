@@ -58,3 +58,100 @@ input
 	border-radius: 50%;
 	padding: 6px 8px 6px 8px;
 }
+
+
+/*--------------------------------------MEDIA QUERRIES----------------------------------------------*/
+
+@media only screen and (min-width : 1500px)
+{
+	.blocPage
+	{
+		width: calc(100% - 300px);
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width : 1159px) and (max-width : 1202px)
+{
+	.sectionHosting figure img
+	{
+		width: 220px;
+	}
+}
+
+@media only screen and (min-width : 1093px) and (max-width : 1160px)
+{
+	.sectionHosting figure img
+	{
+		width: 200px;
+	}
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1194px)
+{
+	.sectionHosting figure img
+	{
+		width: 170px;
+	}
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1201px)
+{
+	/* activités */
+	.sectionActivities figure
+	{
+		margin-left: 0;
+		margin-right: 5px;
+		
+	}
+}
+
+@media only screen and (max-width : 1025px) and (min-width : 767px)
+{
+	.blocPage
+	{
+		width: auto;
+		margin: 0 15px;
+	}
+	
+	.sectionHostingAside
+	{
+		flex-direction: column-reverse;
+		margin: 0 15px;
+	}
+
+	.sectionHosting
+	{
+		width: 100%;
+	}
+
+	.flexFigure
+	{
+		display: flex;
+	}
+
+	.sectionActivities figure
+	{
+		margin-left: 0;
+		margin-right: 5px;
+		width: 245px;
+		
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width : 767px)
+{
+	/* Menu nav formulaire filtres */
+	#Section1
+	{
+		margin: 0 25px;
+	}
+
+	.filters
+	{
+		margin-top: 15px;
+		padding-right: 0;
+	}	
+
+
+}

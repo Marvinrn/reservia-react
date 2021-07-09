@@ -70,3 +70,23 @@
     padding-top: 30px;
     
 }
+
+@media only screen and (max-width : 1025px) and (min-width : 767px)
+{
+	.popular
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.popular .titlePopular
+	{
+		justify-content: center;
+	}
+
+	.popular .titlePopular i
+	{
+		padding-right: 0;
+		padding-left: 30px;
+	}
+}

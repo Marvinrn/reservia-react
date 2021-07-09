@@ -36,4 +36,20 @@
 	font-size: 0.8em;
 }
 
+@media only screen and (max-width : 1025px) and (min-width : 767px)
+{
+	.sectionHosting
+	{
+		width: 100%;
+	}
 
+	.sectionHosting h2
+	{
+		text-align: center;
+	}
+
+	.sectionHosting h4
+	{
+		text-align: center;
+	}
+}
