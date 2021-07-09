@@ -1,0 +1,35 @@
+.sectionActivities
+{
+    margin-top: 50px;
+}
+
+.titleActivities
+{
+    font-size: 1em;
+}
+
+.blocActivities
+{
+    display: flex;
+    justify-content: center;
+}
+
+.imgActivities
+{
+    display: flex;
+}
+
+.bigActivities .imgActivities
+{
+    width: 245px;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+.smallActivities .imgActivities
+{
+    width: 245px;
+	height: 130px;
+	object-fit: cover;
+}

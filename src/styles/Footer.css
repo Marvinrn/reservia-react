@@ -17,3 +17,8 @@ footer li
 {
 	line-height: 2em;
 }
+
+footer li:hover
+{
+	font-weight: bold;
+}

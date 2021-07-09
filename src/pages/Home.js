@@ -5,6 +5,7 @@ import Logo from '../components/Logo';
 import '../styles/Home.css'
 import Filters from '../components/Filters';
 import HostingAside from '../components/HostingAside';
+import HomeActivities from '../components/HomeActivities';
 import Footer from '../components/Footer';
 
 
@@ -42,6 +43,7 @@ function Home() {
                 </div>
             </section>
             <HostingAside />
+            <HomeActivities />
             </div>
             <Footer />
         </div>
