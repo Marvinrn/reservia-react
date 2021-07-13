@@ -6,6 +6,7 @@ import '../styles/HostingAside.css'
 import HomeAsideItem from './HomeAsideItem';
 
 function HostingAside() {
+
     return (
         <main className="sectionHostingAside">
             <section className="sectionHosting" >
