@@ -7,6 +7,13 @@ import chezAmina from '../assets/hebergements/HôtelchezAmina.jpg'
 import soleilDuMatin from '../assets/hebergements/HôtelLesoleildumatin.jpg'
 import coeurDeleau from '../assets/hebergements/Aucoeurdeleau.jpg'
 import bleuBlanc from '../assets/hebergements/HôtelToutbleuetBlanc.jpg'
+import castagne from '../assets/hebergements/HôtelCastagne.jpg'
+import divineHotel from '../assets/hebergements/HôtelDivine.jpg'
+import duPhare from '../assets/hebergements/HôtelDuPhare.jpg'
+import hotelCyan from '../assets/hebergements/HôtelCyan.jpg'
+import diPrune from '../assets/hebergements/HôtelPrune.jpg'
+import noche from '../assets/hebergements/HôtelNoche.jpg'
+
 
 
 export const homeHostingList = [
@@ -68,6 +75,66 @@ export const homeHostingList = [
         gradeDown: 0,
         cover: chezAmina,
         price:96
+    },
+
+    {
+        name: 'Hôtel Castagne',
+        id: '7etf',
+        category: 'économique',
+        gradeUp: 3,
+        gradeDown: 2,
+        cover: castagne,
+        price:38
+    },
+
+    {
+        name: 'Divine Hotel',
+        id: '8zid',
+        category: 'romantique',
+        gradeUp: 5,
+        gradeDown: 0,
+        cover: divineHotel,
+        price:133
+    },
+
+    {
+        name: 'Hôtel du Phare',
+        id: '9sod',
+        category: 'familial',
+        gradeUp: 4,
+        gradeDown: 1,
+        cover: duPhare,
+        price:77
+    },
+
+    {
+        name: 'Hôtel Cyan',
+        id: '10uideh',
+        category: 'romantique',
+        gradeUp: 4,
+        gradeDown: 1,
+        cover: hotelCyan,
+        price:88
+    },
+
+    {
+        name: 'Hôtel Di Prune',
+        id: '11mdpa',
+        category: 'animaux autorisés',
+        gradeUp: 3,
+        gradeDown: 2,
+        cover: diPrune,
+        price:92
+    },
+
+    {
+        name: 'Hôtel Noche',
+        id: '12pdmv',
+        category: 'romantique',
+        gradeUp: 4,
+        gradeDown: 1,
+        cover: noche,
+        price:112
     },
 
 ]
