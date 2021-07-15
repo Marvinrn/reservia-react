@@ -3,11 +3,10 @@ import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 import '../styles/Home.css'
-import Filters from '../components/Filters';
 import HostingAside from '../components/HostingAside';
 import HomeActivities from '../components/HomeActivities';
 import Footer from '../components/Footer';
-import DropDown from '../components/DropDown';
+
 
 
 
@@ -38,14 +37,6 @@ function Home() {
                         </input>
                         <button className="searchBtn"><span>Rechercher</span> </button>
                     </form>
-                    <DropDown
-                        label="Filtres"
-                    />
-                    <Filters />
-                    <div className="infobulle">
-                        <p><i className="fas fa-info"></i></p>
-                        <p className="infobulletexte">Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div>
                 </section>
                 <HostingAside />
                 <HomeActivities />
