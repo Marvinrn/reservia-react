@@ -21,120 +21,108 @@ export const homeHostingList = [
         name: ' Auberge la Cannebiere',
         id: '1epk',
         category: 'économique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: cannebiere,
         price: 25
     },
 
     {
-        name: 'Hôtel du port ' ,
+        name: 'Hôtel du port ',
         id: '2jryt',
         category: 'familial',
-        gradeUp: 5,
-        gradeDown: 0,
+        grade: 5,
         cover: duPort,
-        price:52
+        price: 52
     },
 
     {
-        name: 'Hôtel les mouettes' ,
+        name: 'Hôtel les mouettes',
         id: '3bre',
         category: 'romantique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: lesMouettes,
-        price:76
+        price: 76
     },
 
     {
         name: 'Hôtel de la mer',
         id: '4fzg',
         category: 'animaux autorisés',
-        gradeUp: 3,
-        gradeDown: 2,
+        grade: 3,
         cover: deLaMer,
-        price:46
+        price: 46
     },
 
     {
         name: 'Auberge le panier',
         id: '5ht',
         category: 'économique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: lePanier,
-        price:23
+        price: 23
     },
 
     {
         name: 'Hôtel chez Amina',
         id: '6gr',
         category: 'familial',
-        gradeUp: 5,
-        gradeDown: 0,
+        grade: 5,
         cover: chezAmina,
-        price:96
+        price: 96
     },
 
     {
         name: 'Hôtel Castagne',
         id: '7etf',
         category: 'économique',
-        gradeUp: 3,
-        gradeDown: 2,
+        grade: 3,
         cover: castagne,
-        price:38
+        price: 38
     },
 
     {
         name: 'Divine Hotel',
         id: '8zid',
         category: 'romantique',
-        gradeUp: 5,
-        gradeDown: 0,
+        grade: 5,
         cover: divineHotel,
-        price:133
+        price: 133
     },
 
     {
         name: 'Hôtel du Phare',
         id: '9sod',
         category: 'familial',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: duPhare,
-        price:77
+        price: 77
     },
 
     {
         name: 'Hôtel Cyan',
         id: '10uideh',
         category: 'romantique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: hotelCyan,
-        price:88
+        price: 88
     },
 
     {
         name: 'Hôtel Di Prune',
         id: '11mdpa',
         category: 'animaux autorisés',
-        gradeUp: 3,
-        gradeDown: 2,
+        grade: 3,
         cover: diPrune,
-        price:92
+        price: 92
     },
 
     {
         name: 'Hôtel Noche',
         id: '12pdmv',
         category: 'romantique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: noche,
-        price:112
+        price: 112
     },
 
 ]
@@ -144,29 +132,26 @@ export const asideList = [
         name: 'Hôtel Le soleil du matin',
         id: '6grt',
         category: 'romantique',
-        gradeUp: 5,
-        gradeDown: 0,
+        grade: 5,
         cover: soleilDuMatin,
-        price:128
+        price: 128
     },
     {
         name: "Au cœur de l'eau chambres d'hôtes",
         id: '7mse',
         category: 'romantique',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: coeurDeleau,
         price: 71
     },
-    
+
     {
         name: 'Hôtel Tout bleu et Blanc',
         id: '8vss',
         category: 'familial',
-        gradeUp: 4,
-        gradeDown: 1,
+        grade: 4,
         cover: bleuBlanc,
-        price:68
+        price: 68
     }
 ]
 

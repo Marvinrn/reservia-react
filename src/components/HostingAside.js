@@ -18,12 +18,12 @@ function HostingAside() {
 
         setItems(updateItem);
     }
-    
+
 
     const loadMore = () => {
-        setVisible (visible + 3)
+        setVisible(visible + 3)
     }
-    
+
 
     return (
         <main>
@@ -47,18 +47,20 @@ function HostingAside() {
                 <section className="sectionHosting" >
                     <h2>Hébergement à Marseille</h2>
                     <div className="imgHosting" >
-                        {items.slice(0, visible).map(({ id, cover, name, price }) => (
+                        {items.slice(0, visible).map(({ id, cover, name, price, grade }) => (
                             <div key={id}>
                                 <HomeHostingItem
                                     cover={cover}
                                     name={name}
                                     price={price}
+                                    grade={grade}
+
                                 />
                             </div>
                         ))}
                     </div>
-                    {visible < items.length &&(
-                    <h4 onClick={loadMore} > Afficher Plus </h4>
+                    {visible < items.length && (
+                        <h4 onClick={loadMore} > Afficher Plus </h4>
                     )}
                 </section>
 
@@ -69,12 +71,13 @@ function HostingAside() {
                         <i className="fas fa-chart-line"></i>
                     </div>
                     <div className="flexFigure">
-                        {asideList.map(({ id, cover, name, price }) => (
+                        {asideList.map(({ id, cover, name, price, grade }) => (
                             <div key={id}>
                                 <HomeAsideItem
                                     cover={cover}
                                     name={name}
                                     price={price}
+                                    grade={grade}
                                 />
                             </div>
                         ))}

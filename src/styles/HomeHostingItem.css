@@ -7,6 +7,11 @@
 	box-shadow: 0px 2px 15px lightgrey;
 }
 
+.hostingFigure:hover
+{
+    transform: scale(1.10);
+}
+
 .hotelCover
 {
     width: 233px;
@@ -36,7 +41,19 @@
 	
 }
 
-.hostingFigure figcaption i
+.gradingStars i
+{
+    padding-right: 3px;
+}
+
+.gradingStars i[data-active=true]
 {
     font-size: 0.8em;
+    color: #0065FC;
+}
+
+.gradingStars i[data-active=false]
+{
+    font-size: 0.8em;
+    color: #d9d9d9;
 }

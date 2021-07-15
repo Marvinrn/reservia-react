@@ -35,6 +35,11 @@
 	display: flex;
 }
 
+.popular figure:hover
+{
+    transform: scale(1.10);
+}
+
 .popular figure img
 {
     width: 100px;
