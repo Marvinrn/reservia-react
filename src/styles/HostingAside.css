@@ -53,3 +53,32 @@
 		text-align: center;
 	}
 }
+
+/* Responsive mobile size */
+@media screen and (max-width: 767px)
+{
+	.sectionHosting
+	{
+		width:auto;
+		background-color: white;
+		margin-right: 0;
+	}
+
+	.sectionHosting h2
+	{
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.sectionHosting h4
+	{
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.sectionHostingAside
+	{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}

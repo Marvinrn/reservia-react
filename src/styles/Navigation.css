@@ -2,6 +2,7 @@
 {
 	display: flex;
     justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
 .banner a
@@ -25,3 +26,10 @@
 	border-bottom: #0065FC solid 4px;
 }
 
+@media screen and (max-width: 767px)
+{
+	.banner
+	{
+		justify-content: space-around;
+	}
+}

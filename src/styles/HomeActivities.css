@@ -56,3 +56,23 @@
     }
 
 }
+
+@media screen and (max-width: 767px)
+{
+    .blocActivities
+    {
+        flex-direction: column;
+    }
+
+    .titleActivities
+    {
+        text-align: center;
+    }
+
+    .sectionActivities figure
+    {
+       max-width: 245px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}

@@ -9,6 +9,7 @@
 
 .filters li{
     margin-right: 20px;
+	margin-top: 5px;
 	text-decoration: none;
 	color: black;
 	border: 2px solid rgb(217, 217, 217);
