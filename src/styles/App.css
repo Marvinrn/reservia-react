@@ -11,11 +11,6 @@ body
 	max-width: 1600px;
 }
 
-.blocPage
-{
-	width: calc(100% - 50px);
-	margin: auto;
-}
 
 h1{
 	font-size: 1em;
