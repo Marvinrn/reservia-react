@@ -2,7 +2,9 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 import Footer from '../components/Footer'
+import Registration from '../components/Registration';
 import '../styles/Inscription.css'
+
 
 
 /* OBJECTIF POUR LA PAGE INSCRIPTION
@@ -20,8 +22,7 @@ const Inscription = () => {
             <div className="inscriptionBlocPage">
                 <Logo />
                 <Navigation />
-                <div>
-                </div>
+                <Registration />
             </div>
             <Footer />
         </div>

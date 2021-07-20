@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Hebergement from './pages/Hebergement';
 import Activites from './pages/Activites';
 import Inscription from './pages/Inscription';
+import LoginPage from './pages/LoginPage';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/activités" exact component={Activites} />
           <Route path="/inscription" exact component={Inscription} />
           <Route path="/reservia-react" exact component={Home} />
+          <Route path="/login" exact component={LoginPage} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

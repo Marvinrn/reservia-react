@@ -16,3 +16,8 @@ h1{
 	font-size: 1em;
 }
 
+.notFound h1
+{
+	font-size: 300px;
+}
+
