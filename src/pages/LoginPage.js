@@ -15,7 +15,7 @@ const LoginPage = () => {
                         <label>Adresse mail</label>
                         <input
                             type="email"
-                            placeholder="Entrez votre mail"
+                            placeholder="  Entrez votre mail"
                         />
                     </form>
 
@@ -23,7 +23,7 @@ const LoginPage = () => {
                         <label>Mot de passe</label>
                         <input
                             type="password"
-                            placeholder="Entrez votre mot de passe"
+                            placeholder="  Entrez votre mot de passe"
                         />
                     </form>
                     <div><button className='registrationBtn'>Continuer</button></div>

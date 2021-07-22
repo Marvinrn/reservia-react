@@ -1,58 +1,162 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Registration.css'
+
+const initialState = {
+    lastName: '',
+    firstName: '',
+    email: '',
+    phone: '',
+    password: '',
+    confirmPassword: ''
+}
+
+
+const passwordVerifError = {
+    isLengthy: false,
+    hasUpper: false,
+    hasLower: false,
+    hasNumber: false,
+    confirmPassword: false
+}
 
 
 const Registration = () => {
+    const [newUser, setNewUser] = useState(initialState)
+    const [passwordError, setPasswordError] = useState(passwordVerifError)
+
+    useEffect(() => { }, [newUser])
+
+    const handleOnChange = e => {
+        const { name, value } = e.target
+
+        setNewUser({ ...newUser, [name]: value })
+
+        if (name === "password") {
+            const isLengthy = value.length > 8;
+            const hasUpper = /[A-Z]/.test(value)
+            const hasLower = /[a-z]/.test(value)
+            const hasNumber = /[0-9]/.test(value)
+
+            setPasswordError({ ...passwordError, isLengthy, hasUpper, hasLower, hasNumber })
+        }
+
+        if (name === "confirmPassword") {
+            setPasswordError({ ...passwordError, confirmPassword: newUser.password === value })
+        }
+    }
+
+    const handleOnSubmit = e => {
+        e.preventDefault()
+
+        console.log(newUser);
+    }
+
     return (
-        <div className="registration">
-            <form className="registrationForm" >
+        <form className="registration" onSubmit={handleOnSubmit} >
+            <div className="registrationForm" >
                 <label>Nom</label>
                 <input
-                    placeholder="Entrez votre nom"
+                    type="text"
+                    name="lastName"
+                    value={newUser.lastName}
+                    onChange={handleOnChange}
+                    placeholder="  Entrez votre nom"
                 />
-            </form>
+            </div>
 
-            <form className="registrationForm" >
+            <div className="registrationForm" >
                 <label>Prénom</label>
                 <input
-                    placeholder="Entrez votre prénom"
+                    type="text"
+                    name="firstName"
+                    value={newUser.firstName}
+                    onChange={handleOnChange}
+                    placeholder="  Entrez votre prénom"
                 />
-            </form>
+            </div>
 
-            <form className="registrationForm" >
+            <div className="registrationForm" >
                 <label>Adresse mail</label>
                 <input
                     type="email"
-                    placeholder="Entrez votre mail"
+                    name="email"
+                    value={newUser.email}
+                    onChange={handleOnChange}
+                    placeholder="  Entrez votre mail"
                 />
-            </form>
+            </div>
 
-            <form className="registrationForm" >
+            <div className="registrationForm" >
                 <label>Numéro de téléphone</label>
                 <input
-                    placeholder="Entrez votre numéro"
+                    type="number"
+                    name="phone"
+                    value={newUser.phone}
+                    onChange={handleOnChange}
+                    placeholder="  Entrez votre numéro"
                 />
-            </form>
+            </div>
 
-            <form className="registrationForm" >
+            <div className="registrationForm" >
                 <label>Mot de passe</label>
                 <input
                     type="password"
-                    placeholder="Entrez votre mot de passe"
+                    name="password"
+                    value={newUser.password}
+                    onChange={handleOnChange}
+                    placeholder="  Entrez votre mot de passe"
                 />
-            </form>
+            </div>
 
-            <form className="registrationForm" >
+            <div className="registrationForm" >
                 <label>Confirmer mot de passe</label>
                 <input
                     type="password"
-                    placeholder="Entrez votre mot de passe"
+                    name="confirmPassword"
+                    value={newUser.confirmPassword}
+                    onChange={handleOnChange}
+                    placeholder="  Confirmer mot de passe"
                 />
-            </form>
+            </div>
 
-            <div><button className='registrationBtn'>Continuer</button></div>
+            <ul>
+                <li
+                    className={
+                        passwordError.isLengthy ? "textPasswordValid" : "textPasswordError"
+                    }
+                >
+                    Min 8 caractères
+                </li>
+                <li
+                    className={
+                        passwordError.hasUpper ? "textPasswordValid" : "textPasswordError"
+                    }
+                >
+                    Au moins une majuscule
+                </li>
+                <li
+                    className={
+                        passwordError.hasLower ? "textPasswordValid" : "textPasswordError"
+                    }
+                >
+                    Au moins une minuscule
+                </li>
+                <li
+                    className={
+                        passwordError.hasNumber ? "textPasswordValid" : "textPasswordError"
+                    }
+                >
+                    Au moins un nombre
+                </li>
+            </ul>
+
+            <div>
+                <button className='registrationBtn' type="submit" disabled={Object.values(passwordError).includes(false)} >
+                    Continuer
+                </button>
+            </div>
             <a href="/Login" className="registrationLink" >Déja inscrit? </a>
-        </div>
+        </form>
     );
 };
 
