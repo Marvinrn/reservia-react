@@ -23,7 +23,6 @@ function MainHosting() {
         const updateItem = HostingList.filter((curentElem) => {
             return curentElem.city === cityItem
         });
-        console.log(filterCity);
         setItems(updateItem);
     }
 
@@ -35,20 +34,20 @@ function MainHosting() {
         <main>
             <div>
                 <select className="selectCategory" >
-                    <option value="" onClick={() => setItems(HostingList)} >Choissez une catégorie</option>
-                    <option value="Paris" onClick={() => filterItem('économique')} >Économique</option>
-                    <option value="Strasbourg" onClick={() => filterItem('familial')}  >Familial</option>
-                    <option value="Lyon" onClick={() => filterItem('romantique')}>Romantique</option>
-                    <option value="Lille" onClick={() => filterItem('animaux autorisés')}>Animaux autorisés</option>
+                    <option  onClick={() => setItems(HostingList)} >Choissez une catégorie</option>
+                    <option  onClick={() => filterItem('économique')} >Économique</option>
+                    <option  onClick={() => filterItem('familial')}  >Familial</option>
+                    <option  onClick={() => filterItem('romantique')}>Romantique</option>
+                    <option  onClick={() => filterItem('animaux autorisés')}>Animaux autorisés</option>
                 </select>
 
                 <select className="selectCity" >
-                    <option value="" onClick={() => setItems(HostingList)} >Choissez une ville</option>
-                    <option value="Paris" onClick={() => filterCity('Paris')} >Paris</option>
-                    <option value="Strasbourg" onClick={() => filterCity('Strasbourg')}  >Strasbourg</option>
-                    <option value="Lyon" onClick={() => filterCity('Lyon')}>Lyon</option>
-                    <option value="Lille" onClick={() => filterCity('Lille')}>Lille</option>
-                    <option value="Marseille" onClick={() => filterCity('Marseille')} >Marseille</option>
+                    <option  onClick={() => setItems(HostingList)} >Choissez une ville</option>
+                    <option  onClick={() => filterCity('Paris')} >Paris</option>
+                    <option  onClick={() => filterCity('Strasbourg')}  >Strasbourg</option>
+                    <option  onClick={() => filterCity('Lyon')}>Lyon</option>
+                    <option  onClick={() => filterCity('Lille')}>Lille</option>
+                    <option  onClick={() => filterCity('Marseille')} >Marseille</option>
                 </select>
             </div>
 
