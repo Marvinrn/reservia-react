@@ -1,0 +1,46 @@
+.hostingPage
+{
+	width: calc(100% - 300px);
+	margin: auto;
+}
+
+.marginFilter
+{
+    margin-top: 50px;
+}
+
+select
+{
+    margin-right: 50px;
+    padding: 1em 1.5em;
+    background-color: #F2F2F2;
+    border: 0;
+}
+
+.mainHostingSection
+{
+    background-color: #F2F2F2;
+	border-radius: 25px;
+	padding-top: 50px;
+    margin-top: 50px;
+	margin-right: 30px;
+}
+
+
+
+.mainImgHosting {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.loadMore
+{
+    margin: 0;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	font-size: 0.8em;
+}
+

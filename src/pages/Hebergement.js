@@ -1,6 +1,8 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
+import Footer from '../components/Footer'
+import MainHosting from '../components/MainHosting';
 
 
 /* OBJECTIFS POUR LA PAGE HÉBERGMENT
@@ -9,14 +11,20 @@ import Logo from '../components/Logo';
     
     - Faire en sorte de pouvoir les classer par prix du moins cher au plus cher et inversement.
 
+    (je fais comme ca car je n'arrive pas à trouver une API d'hotel gratuite qui me convient)
+
 */
 
 
 const Hebergement = () => {
     return (
         <div>
-            <Logo />
-            <Navigation />
+            <div className="hostingPage">
+                <Logo />
+                <Navigation />
+                <MainHosting />
+            </div>
+            <Footer />
         </div>
     );
 };
