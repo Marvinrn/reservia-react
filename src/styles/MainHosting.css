@@ -5,15 +5,16 @@
 }
 
 
-.filterBtn
+.abovefilterbtn
 {
     margin-top: 50px;
 }
 
+
 .filterBtn button
 {
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 1em 1.5em;
     border: 0; 
     border-radius: 15px;

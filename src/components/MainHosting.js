@@ -9,7 +9,7 @@ function MainHosting() {
     const [items, setItems] = useState(HostingList)
     const filtersCities = ['Paris', 'Strasbourg', 'Lyon', 'Lille', 'Marseille']
     const filtersCategories = ['Économique', 'Familial', 'Romantique', 'Animaux autorisés']
- 
+
     // Note to myself: Pour le menu filtre, améliorer en faisant en sorte de s'avoir quel boutton est actif
 
 
@@ -34,12 +34,26 @@ function MainHosting() {
         setVisible(visible + 6)
     }
 
+    // function to sort item by price descending
+    const priceFilterUp = () => {
+        const sortedArray = [...HostingList].sort((a, b) => {
+            return b.price - a.price
+        });
+        setItems(sortedArray)
+    }
 
+    // function to sort item by price ascending
+    const priceFilterDown = () => {
+        const sortedArray = [...HostingList].sort((a, b) => {
+            return a.price - b.price
+        });
+        setItems(sortedArray)
+    }
 
     return (
         <main>
             <div>
-                <div className="filterBtn">
+                <div className="filterBtn abovefilterbtn">
                     <button
                         className="cancelBtn"
                         onClick={() => {
@@ -49,6 +63,11 @@ function MainHosting() {
                         Annuler Sélection
                     </button>
 
+                    <button onClick={priceFilterUp}>Prix <i className="fas fa-arrow-up"></i> </button>
+                    <button onClick={priceFilterDown}>Prix <i className="fas fa-arrow-down"></i> </button>
+                    </div>
+
+                    <div className="filterBtn">
                     {filtersCities.map((city) => (
                         <button
                             key={city}
