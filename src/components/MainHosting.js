@@ -10,8 +10,7 @@ function MainHosting() {
     const filtersCities = ['Paris', 'Strasbourg', 'Lyon', 'Lille', 'Marseille']
     const filtersCategories = ['Économique', 'Familial', 'Romantique', 'Animaux autorisés']
  
-    console.log(filtersCities);
-    console.log(filtersCategories);
+    // Note to myself: Pour le menu filtre, améliorer en faisant en sorte de s'avoir quel boutton est actif
 
 
     //function to filter by category
@@ -34,6 +33,7 @@ function MainHosting() {
     const loadMore = () => {
         setVisible(visible + 6)
     }
+
 
 
     return (
