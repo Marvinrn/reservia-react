@@ -50,6 +50,13 @@ function MainHosting() {
         setItems(sortedArray)
     }
 
+    const gradeFilter = () => {
+        const sortedArray = [...HostingList].sort((a,b) => {
+            return b.grade - a.grade
+        });
+        setItems(sortedArray)
+    }
+
     return (
         <main>
             <div>
@@ -63,8 +70,9 @@ function MainHosting() {
                         Annuler Sélection
                     </button>
 
-                    <button onClick={priceFilterUp}>Prix <i className="fas fa-arrow-up"></i> </button>
-                    <button onClick={priceFilterDown}>Prix <i className="fas fa-arrow-down"></i> </button>
+                    <button className="priceUp" onClick={priceFilterUp}>Prix <i className="fas fa-arrow-up"></i> </button>
+                    <button className="priceDown" onClick={priceFilterDown}>Prix <i className="fas fa-arrow-down"></i> </button>
+                    <button className="grade" onClick={gradeFilter}>Note <i className="fas fa-star"></i> </button>
                     </div>
 
                     <div className="filterBtn">

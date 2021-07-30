@@ -31,6 +31,21 @@
     color: white;
 }
 
+.filterBtn .priceUp i
+{
+    color: #0065FC;
+}
+
+.filterBtn .priceDown i
+{
+    color: #0065FC;
+}
+
+.filterBtn .grade i
+{
+    color: #0065FC;
+}
+
 .filterBtn .btn-inactive
 {
     background-color: #DEEBFF;
