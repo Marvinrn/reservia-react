@@ -7,18 +7,22 @@ import '../styles/MainHosting.css'
 function MainHosting() {
     const [visible, setVisible] = useState(6)
     const [items, setItems] = useState(HostingList)
+    const filtersCities = ['Paris', 'Strasbourg', 'Lyon', 'Lille', 'Marseille']
+    const filtersCategories = ['Économique', 'Familial', 'Romantique', 'Animaux autorisés']
+ 
+    console.log(filtersCities);
+    console.log(filtersCategories);
 
+
+    //function to filter by category
     const filterItem = (categItem) => {
         const updateItem = HostingList.filter((curentElem) => {
             return curentElem.category === categItem
-
-
-
         });
-
         setItems(updateItem);
     }
 
+    //function to filter by city
     const filterCity = (cityItem) => {
         const updateItem = HostingList.filter((curentElem) => {
             return curentElem.city === cityItem
@@ -26,29 +30,51 @@ function MainHosting() {
         setItems(updateItem);
     }
 
+    //function to load more hotel
     const loadMore = () => {
         setVisible(visible + 6)
     }
 
+
     return (
         <main>
             <div>
-                <select className="selectCategory" >
-                    <option  onClick={() => setItems(HostingList)} >Choissez une catégorie</option>
-                    <option  onClick={() => filterItem('économique')} >Économique</option>
-                    <option  onClick={() => filterItem('familial')}  >Familial</option>
-                    <option  onClick={() => filterItem('romantique')}>Romantique</option>
-                    <option  onClick={() => filterItem('animaux autorisés')}>Animaux autorisés</option>
-                </select>
+                <div className="filterBtn">
+                    <button
+                        className="cancelBtn"
+                        onClick={() => {
+                            setItems(HostingList);
+                        }}
+                    >
+                        Annuler Sélection
+                    </button>
 
-                <select className="selectCity" >
-                    <option  onClick={() => setItems(HostingList)} >Choissez une ville</option>
-                    <option  onClick={() => filterCity('Paris')} >Paris</option>
-                    <option  onClick={() => filterCity('Strasbourg')}  >Strasbourg</option>
-                    <option  onClick={() => filterCity('Lyon')}>Lyon</option>
-                    <option  onClick={() => filterCity('Lille')}>Lille</option>
-                    <option  onClick={() => filterCity('Marseille')} >Marseille</option>
-                </select>
+                    {filtersCities.map((city) => (
+                        <button
+                            key={city}
+                            type="button"
+                            className="btn-inactive"
+                            onClick={() => {
+                                filterCity(city);
+                            }}
+                        >
+                            {city}
+                        </button>
+                    ))}
+
+                    {filtersCategories.map((category) => (
+                        <button
+                            key={category}
+                            type="button"
+                            className="btn-inactive"
+                            onClick={() => {
+                                filterItem(category);
+                            }}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             <div className="mainHostingSection" >

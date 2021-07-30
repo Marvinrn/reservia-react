@@ -29,7 +29,7 @@ import wedding from '../assets/hebergements/WeddingHotel.jpg'
 export const HostingList = [{
     name: ' Auberge la Cannebiere',
     id: '1epk',
-    category: 'économique',
+    category: 'Économique',
     grade: 4,
     cover: cannebiere,
     price: 25,
@@ -39,7 +39,7 @@ export const HostingList = [{
 {
     name: 'Hôtel du port ',
     id: '2jryt',
-    category: 'familial',
+    category: 'Familial',
     grade: 5,
     cover: duPort,
     price: 52,
@@ -49,7 +49,7 @@ export const HostingList = [{
 {
     name: 'Hôtel les mouettes',
     id: '3bre',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: lesMouettes,
     price: 76,
@@ -59,7 +59,7 @@ export const HostingList = [{
 {
     name: 'Hôtel de la mer',
     id: '4fzg',
-    category: 'animaux autorisés',
+    category: 'Animaux autorisés',
     grade: 3,
     cover: deLaMer,
     price: 46,
@@ -69,7 +69,7 @@ export const HostingList = [{
 {
     name: 'Auberge le panier',
     id: '5ht',
-    category: 'économique',
+    category: 'Économique',
     grade: 4,
     cover: lePanier,
     price: 23,
@@ -79,7 +79,7 @@ export const HostingList = [{
 {
     name: 'Hôtel chez Amina',
     id: '6gr',
-    category: 'familial',
+    category: 'Familial',
     grade: 5,
     cover: chezAmina,
     price: 96,
@@ -89,7 +89,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Castagne',
     id: '7etf',
-    category: 'économique',
+    category: 'Économique',
     grade: 3,
     cover: castagne,
     price: 38,
@@ -99,7 +99,7 @@ export const HostingList = [{
 {
     name: 'Divine Hotel',
     id: '8zid',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 5,
     cover: divineHotel,
     price: 133,
@@ -109,7 +109,7 @@ export const HostingList = [{
 {
     name: 'Hôtel du Phare',
     id: '9sod',
-    category: 'familial',
+    category: 'Familial',
     grade: 4,
     cover: duPhare,
     price: 77,
@@ -119,7 +119,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Cyan',
     id: '10uideh',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: hotelCyan,
     price: 88,
@@ -129,7 +129,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Di Prune',
     id: '11mdpa',
-    category: 'animaux autorisés',
+    category: 'Animaux autorisés',
     grade: 3,
     cover: diPrune,
     price: 92,
@@ -139,7 +139,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Noche',
     id: '12pdmv',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: noche,
     price: 112,
@@ -149,7 +149,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Le soleil du matin',
     id: '6grt',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 5,
     cover: soleilDuMatin,
     price: 128,
@@ -158,7 +158,7 @@ export const HostingList = [{
 {
     name: "Au cœur de l'eau chambres d'hôtes",
     id: '7mse',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: coeurDeleau,
     price: 71,
@@ -168,7 +168,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Tout bleu et Blanc',
     id: '8vss',
-    category: 'familial',
+    category: 'Familial',
     grade: 4,
     cover: bleuBlanc,
     price: 68,
@@ -178,7 +178,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Poupre',
     id: '14rtrth',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: pourpre,
     price: 85,
@@ -188,7 +188,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Famille',
     id: '14yfu',
-    category: 'familial',
+    category: 'Familial',
     grade: 3,
     cover: famille,
     price: 57,
@@ -198,7 +198,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Ciel',
     id: '15yfu',
-    category: 'économique',
+    category: 'Économique',
     grade: 4,
     cover: ciel,
     price: 35,
@@ -208,7 +208,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Du Phare',
     id: '16yfu',
-    category: 'économique',
+    category: 'Économique',
     grade: 5,
     cover: phare,
     price: 49,
@@ -218,7 +218,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Sousou',
     id: '17yfu',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 5,
     cover: sousou,
     price: 156,
@@ -228,7 +228,7 @@ export const HostingList = [{
 {
     name: 'Le M&S',
     id: '18yfu',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 5,
     cover: ms,
     price: 200,
@@ -238,7 +238,7 @@ export const HostingList = [{
 {
     name: 'Hôtel Weeb',
     id: '19grg',
-    category: 'familial',
+    category: 'Familial',
     grade: 4,
     cover: weeb,
     price: 77,
@@ -248,7 +248,7 @@ export const HostingList = [{
 {
     name: 'Furry Hotel ',
     id: '20fuy',
-    category: 'animaux autorisés',
+    category: 'Animaux autorisés',
     grade: 3,
     cover: furryHotel,
     price: 63,
@@ -258,7 +258,7 @@ export const HostingList = [{
 {
     name: 'Black & White',
     id: '21rgre',
-    category: 'familial',
+    category: 'Familial',
     grade: 4,
     cover: blackWhite,
     price: 111,
@@ -268,7 +268,7 @@ export const HostingList = [{
 {
     name: 'Wedding Hotel',
     id: '22ro',
-    category: 'romantique',
+    category: 'Romantique',
     grade: 4,
     cover: wedding,
     price: 103,

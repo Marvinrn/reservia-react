@@ -4,18 +4,54 @@
 	margin: auto;
 }
 
-.marginFilter
+
+.filterBtn
 {
     margin-top: 50px;
 }
 
-select
+.filterBtn button
 {
-    margin-right: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
     padding: 1em 1.5em;
-    background-color: #F2F2F2;
-    border: 0;
+    border: 0; 
+    border-radius: 15px;
 }
+
+.filterBtn .cancelBtn
+{
+    background-color: #F2F2F2;
+}
+
+.filterBtn .cancelBtn:hover
+{
+    background-color: rgb(209, 86, 86);
+    color: white;
+}
+
+.filterBtn .btn-inactive
+{
+    background-color: #DEEBFF;
+}
+
+.filterBtn .btn-inactive:hover
+{
+    background-color: #0065FC;
+	color: white;
+}
+
+.filterBtn .btn-active
+{
+	background-color: #0065FC;
+	color: white;
+}
+
+.filterBtn button:hover
+{
+    transform: scale(1.10);
+}
+
 
 .mainHostingSection
 {
