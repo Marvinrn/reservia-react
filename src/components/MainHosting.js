@@ -7,11 +7,17 @@ import '../styles/MainHosting.css'
 function MainHosting() {
     const [visible, setVisible] = useState(6)
     const [items, setItems] = useState(HostingList)
+    const [inputValue, setInputValue] = useState('')
     const filtersCities = ['Paris', 'Strasbourg', 'Lyon', 'Lille', 'Marseille']
     const filtersCategories = ['Économique', 'Familial', 'Romantique', 'Animaux autorisés']
 
     // Note to myself: Pour le menu filtre, améliorer en faisant en sorte de s'avoir quel boutton est actif
 
+    function handleInput(e) {
+        setInputValue(e.target.value)
+    }
+
+    console.log(inputValue);
 
     //function to filter by category
     const filterItem = (categItem) => {
@@ -51,7 +57,7 @@ function MainHosting() {
     }
 
     const gradeFilter = () => {
-        const sortedArray = [...HostingList].sort((a,b) => {
+        const sortedArray = [...HostingList].sort((a, b) => {
             return b.grade - a.grade
         });
         setItems(sortedArray)
@@ -60,6 +66,22 @@ function MainHosting() {
     return (
         <main>
             <div>
+                <section>
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                    <form method="post" acton="" className="formulaire" >
+                        <button className="localisation" disabled><i className="fas fa-map-marker-alt"></i></button>
+                        <input
+                            type="text"
+                            value={inputValue}
+                            placeholder="Entrez un nom de ville"
+                            onChange={handleInput}>
+                        </input>
+                        <button className="searchBtn"><span>Rechercher</span> </button>
+                    </form>
+                </section>
+
+                
                 <div className="filterBtn abovefilterbtn">
                     <button
                         className="cancelBtn"
@@ -73,9 +95,9 @@ function MainHosting() {
                     <button className="priceUp" onClick={priceFilterUp}>Prix <i className="fas fa-arrow-up"></i> </button>
                     <button className="priceDown" onClick={priceFilterDown}>Prix <i className="fas fa-arrow-down"></i> </button>
                     <button className="grade" onClick={gradeFilter}>Note <i className="fas fa-star"></i> </button>
-                    </div>
+                </div>
 
-                    <div className="filterBtn">
+                <div className="filterBtn">
                     {filtersCities.map((city) => (
                         <button
                             key={city}

@@ -4,7 +4,6 @@ import Logo from '../components/Logo';
 import Footer from '../components/Footer'
 import MainHosting from '../components/MainHosting';
 
-
 /* OBJECTIFS POUR LA PAGE HÉBERGMENT
 
     - Afficher une liste d'hôtels et faire un filtre qui affiche les hôtels d'une ville précise (faire environs 5 hôtels minimum par villes Paris, Strasbourg, Lyon, Lille etc etc)

@@ -22,10 +22,10 @@ p
 {
 	border: 1px solid #F2F2F2;
 	border-right: none;
-	padding: 13px 0;
+	padding: 13px 0 13px 10px;
 	margin-left: -4px;
 	margin-right: -4px;
-	width: 150px;
+	width: 180px;
 }
 
 .searchBtn
