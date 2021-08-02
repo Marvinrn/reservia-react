@@ -7,17 +7,24 @@ import '../styles/MainHosting.css'
 function MainHosting() {
     const [visible, setVisible] = useState(6)
     const [items, setItems] = useState(HostingList)
-    const [inputValue, setInputValue] = useState('')
+    const [searchTerm, setSearchTerm] = useState('')
     const filtersCities = ['Paris', 'Strasbourg', 'Lyon', 'Lille', 'Marseille']
     const filtersCategories = ['Économique', 'Familial', 'Romantique', 'Animaux autorisés']
 
     // Note to myself: Pour le menu filtre, améliorer en faisant en sorte de s'avoir quel boutton est actif
 
-    function handleInput(e) {
-        setInputValue(e.target.value)
-    }
+    const searchBtnFilter = () => {
+        const updateItem = HostingList.filter((val) => {
+            if ( searchTerm === ''){
+                return val
+            } else if (  val.city.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+        ){
+            return val
+        }
+    })
+    setItems(updateItem)
+}
 
-    console.log(inputValue);
 
     //function to filter by category
     const filterItem = (categItem) => {
@@ -73,11 +80,10 @@ function MainHosting() {
                         <button className="localisation" disabled><i className="fas fa-map-marker-alt"></i></button>
                         <input
                             type="text"
-                            value={inputValue}
                             placeholder="Entrez un nom de ville"
-                            onChange={handleInput}>
+                            onChange={(e) => setSearchTerm(e.target.value)}>
                         </input>
-                        <button className="searchBtn"><span>Rechercher</span> </button>
+                        <button type="button" className="searchBtn" onClick={searchBtnFilter}><span>Rechercher</span> </button>
                     </form>
                 </section>
 
@@ -128,14 +134,14 @@ function MainHosting() {
 
             <div className="mainHostingSection" >
                 <div className="mainImgHosting" >
-                    {items.slice(0, visible).map(({ id, cover, name, price, grade }) => (
+                    {items.slice(0, visible).map(({ id, cover, name, price, grade,city}) => (
                         <div key={id}>
                             <MainHostingItems
                                 cover={cover}
                                 name={name}
                                 price={price}
                                 grade={grade}
-
+                                city={city}
                             />
                         </div>
                     ))}

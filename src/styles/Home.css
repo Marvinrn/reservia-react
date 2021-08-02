@@ -28,6 +28,11 @@ p
 	width: 180px;
 }
 
+.searchBtn:active
+{
+	font-weight: bold;
+}
+
 .searchBtn
 {
 	background-color: #0065FC;

@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 
 const SearchInput = () => {
-    const [inputValue, setInputValue] = useState('')
+    const [homeInputValue, setHomeInputValue] = useState('')
 
-    function handleInput(e) {
-        setInputValue(e.target.value)
+    function homeHandleInput(e) {
+        setHomeInputValue(e.target.value)
     }
+    console.log(homeInputValue);
     return (
         <div>
             <section>
@@ -15,11 +16,11 @@ const SearchInput = () => {
                         <button className="localisation" disabled><i className="fas fa-map-marker-alt"></i></button>
                         <input
                             type="text"
-                            value={inputValue}
+                            value={homeInputValue}
                             placeholder="Entrez un nom de ville"
-                            onChange={handleInput}>
+                            onChange={homeHandleInput}>
                         </input>
-                        <button className="searchBtn"><span>Rechercher</span> </button>
+                        <button type="button" className="searchBtn"><span>Rechercher</span> </button>
                     </form>
                 </section>
         </div>
