@@ -1,6 +1,6 @@
 .hostingPage
 {
-	width: calc(100% - 300px);
+	width: calc(100% - 90px);
 	margin: auto;
 }
 
@@ -83,7 +83,7 @@
 .mainImgHosting {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1080px;
     margin: auto;
 }
@@ -94,5 +94,14 @@
 	padding-left: 30px;
 	padding-bottom: 30px;
 	font-size: 0.8em;
+}
+
+@media only screen and (min-width : 350px) and (max-width : 560px)
+{
+    .mainHostingSection
+{
+
+    width: 100%;
+}
 }
 

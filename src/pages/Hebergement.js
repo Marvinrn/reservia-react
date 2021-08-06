@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 import Footer from '../components/Footer'
 import MainHosting from '../components/MainHosting';
+import '../styles/Hebergement.css'
 
 /* OBJECTIFS POUR LA PAGE HÉBERGMENT
 

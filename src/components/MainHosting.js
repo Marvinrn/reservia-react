@@ -21,6 +21,7 @@ function MainHosting() {
         ){
             return val
         }
+        return (null)
     })
     setItems(updateItem)
 }

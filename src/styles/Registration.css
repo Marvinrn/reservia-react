@@ -81,3 +81,12 @@
 {
     color: #c4dbfd;
 }
+
+@media only screen and (min-width : 1025px) and (max-width : 1499px)
+{
+	.blocPage
+	{
+		width: calc(100% - 90px);
+		margin: auto;
+	}
+}
