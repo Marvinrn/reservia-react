@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reservia-react/static/css/main.6778d93a.chunk.css",
-    "main.js": "/reservia-react/static/js/main.b74e2c2c.chunk.js",
-    "main.js.map": "/reservia-react/static/js/main.b74e2c2c.chunk.js.map",
+    "main.js": "/reservia-react/static/js/main.fc5fef70.chunk.js",
+    "main.js.map": "/reservia-react/static/js/main.fc5fef70.chunk.js.map",
     "runtime-main.js": "/reservia-react/static/js/runtime-main.68daae87.js",
     "runtime-main.js.map": "/reservia-react/static/js/runtime-main.68daae87.js.map",
     "static/js/2.981ea7bd.chunk.js": "/reservia-react/static/js/2.981ea7bd.chunk.js",
@@ -46,6 +46,6 @@
     "static/js/runtime-main.68daae87.js",
     "static/js/2.981ea7bd.chunk.js",
     "static/css/main.6778d93a.chunk.css",
-    "static/js/main.b74e2c2c.chunk.js"
+    "static/js/main.fc5fef70.chunk.js"
   ]
 }
