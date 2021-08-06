@@ -155,7 +155,7 @@ const Registration = () => {
                     Continuer
                 </button>
             </div>
-            <a href="/Login" className="registrationLink" >Déja inscrit? </a>
+            <a href="/login" className="registrationLink" >Déja inscrit? </a>
         </form>
     );
 };
